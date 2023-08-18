@@ -1,10 +1,13 @@
-import { Component } from '@angular/core';
+import { Component, OnDestroy } from '@angular/core';
 
 @Component({
   selector: 'app-leftsidebar-component',
   templateUrl: './leftsidebar-component.component.html',
   styleUrls: ['./leftsidebar-component.component.css']
 })
-export class LeftsidebarComponentComponent {
+export class LeftsidebarComponentComponent implements OnDestroy {
+  ngOnDestroy(): void {
+    
+  }
 
 }
