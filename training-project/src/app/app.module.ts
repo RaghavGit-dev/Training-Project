@@ -7,7 +7,6 @@ import { LeftsidebarComponentComponent } from './components/leftsidebar-componen
 import { RightsidebarComponentComponent } from './components/rightsidebar-component/rightsidebar-component.component';
 import { CentreComponentComponent } from './components/centre-component/centre-component.component';
 import { HeaderComponentComponent } from './components/header-component/header-component.component';
-import { RouterModule } from '@angular/router';
 
 @NgModule({
   declarations: [
@@ -19,13 +18,7 @@ import { RouterModule } from '@angular/router';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
-    RouterModule.forRoot([
-      {path: 'header', component: HeaderComponentComponent},
-      {path: 'left-sidebar', component: LeftsidebarComponentComponent},
-      {path: 'right-sidebar', component: RightsidebarComponentComponent},
-      {path: 'centre', component: CentreComponentComponent}
-    ])
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
